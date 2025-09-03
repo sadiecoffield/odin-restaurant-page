@@ -44,7 +44,7 @@ button {
   background-color: rgb(0, 22, 3);
   color: rgb(254, 255, 240);
   cursor: pointer;
-  text-decoration: underline;
+  
 }
 
 button:hover {
