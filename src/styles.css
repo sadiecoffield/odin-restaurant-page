@@ -22,3 +22,31 @@ img {
   display: block;
   max-inline-size: 100%;
 }
+
+body {
+  background-color: rgb(0, 22, 3);
+  color: rgb(254, 255, 240);
+}
+
+header {
+  padding: 20px 30px;
+}
+
+nav {
+  width: min(00px, 50%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+}
+
+button {
+  border: none;
+  background-color: rgb(0, 22, 3);
+  color: rgb(254, 255, 240);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+button:hover {
+  color: rgb(226, 215, 2);
+}
