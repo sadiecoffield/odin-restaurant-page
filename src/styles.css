@@ -86,10 +86,6 @@ h2 {
   color: rgb(201, 134, 2);
 }
 
-h3 {
-  
-}
-
 .hour-row {
   width: min(250px, 100%);
   display: grid;
