@@ -10,12 +10,12 @@ function renderHomePage() {
 
   // Add heading to home page
   const h1 = document.createElement('h1');
-  h1.textContent = "The Ferryman's";
+  h1.textContent = "The Ferryman's Inn";
   container.appendChild(h1);
 
   // Add description to home page
   const paragraph = document.createElement('p');
-  paragraph.textContent = "Welcome to The Ferrymen's, where great food meets warm hospitality. Inspired by the spirit of timeless journeys and riverside gatherings, our restaurant offers a menu crafted from fresh, locally sourced ingredients and flavors that bring people together. Whether you're here for a hearty meal, a casual drink, or a special occasion, The Ferrymen's is the perfect place to relax, enjoy, and share memorable moments.";
+  paragraph.textContent = "Tucked away on the banks of Loch Tay, The Ferryman’s Inn offers a warm welcome and a dining experience that’s both relaxed and refined. Our small, scenic restaurant celebrates everything we love about Scotland – its natural beauty, warm hospitality, and exceptional local produce. Our thoughtfully crafted menu puts flavour first, with ingredients sourced from some of Perthshire’s best local suppliers. Wherever possible, we keep things close to home, making as much as possible in-house and showcasing the finest seasonal ingredients and an ever changing seasonal menu.";
   container.appendChild(paragraph);
 
   // Add opening hours section to home page

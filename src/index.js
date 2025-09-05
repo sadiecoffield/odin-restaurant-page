@@ -1,5 +1,6 @@
 import "./styles.css";
 import { renderHomePage } from './homePage.js';
+import { renderMenuPage } from './menuPage.js';
 
 function switchTabs() {
   const container = document.querySelector('#content');
@@ -13,7 +14,7 @@ function switchTabs() {
       if (btn.textContent === 'Home') {
         renderHomePage();
       } else if (btn.textContent === 'Menu') {
-        // render menu module
+        renderMenuPage();
       } else {
         // render about module
       }

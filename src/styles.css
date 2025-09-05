@@ -92,3 +92,16 @@ h2 {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
 }
+
+.menu-container {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content repeat(2, 1fr);
+}
+
+.menu-container > h1 {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
