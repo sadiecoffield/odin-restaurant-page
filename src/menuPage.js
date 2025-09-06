@@ -10,6 +10,7 @@ function renderMenuPage() {
 
   // Add starters container
   const startersContainer = document.createElement('div');
+  startersContainer.classList.add('starters-container');
   const startersHeading = document.createElement('h2');
   startersHeading.textContent = 'Starters';
   startersContainer.appendChild(startersHeading);
@@ -18,6 +19,7 @@ function renderMenuPage() {
 
   // Add mains container
   const mainsContainer = document.createElement('div');
+  mainsContainer.classList.add('mains-container');
   const mainsHeading = document.createElement('h2');
   mainsHeading.textContent = 'Mains';
   mainsContainer.appendChild(mainsHeading);
@@ -26,6 +28,7 @@ function renderMenuPage() {
 
   // Add desserts container
   const dessertsContainer = document.createElement('div');
+  dessertsContainer.classList.add('desserts-container');
   const dessertsHeading = document.createElement('h2');
   dessertsHeading.textContent = 'Desserts';
   dessertsContainer.appendChild(dessertsHeading);
@@ -38,10 +41,14 @@ function renderMenuPage() {
 // Create menu items for each type of item e.g. starter, main etc.
 function createMenuItems(itemType, numOfItems, startersContainer) {
   for (let i = 0; i < numOfItems; i++) {
-    const optionContainer = document.createElement('div');
+    const itemContainer = document.createElement('div');
+    itemContainer.classList.add('item-container');
     const itemName = document.createElement('p');
+    itemName.classList.add('item-name');
     const itemDescription = document.createElement('p');
+    itemDescription.classList.add('item-description');
     const itemPrice = document.createElement('p');
+    itemPrice.classList.add('item-price');
 
     if (itemType === 'starter') {
       switch (i) {
@@ -135,10 +142,9 @@ function createMenuItems(itemType, numOfItems, startersContainer) {
       }
     }
 
-    optionContainer.append(itemName, itemDescription, itemPrice);
-    startersContainer.appendChild(optionContainer);
+    itemContainer.append(itemName, itemDescription, itemPrice);
+    startersContainer.appendChild(itemContainer);
   }
-  console.log(startersContainer);
 }
 
 export { renderMenuPage };

@@ -82,7 +82,6 @@ span {
 
 h2 {
   font-size: 1.5rem;
-  margin-bottom: 20px;
   color: rgb(201, 134, 2);
 }
 
@@ -99,9 +98,45 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: min-content repeat(2, 1fr);
+  column-gap: 100px;
+  row-gap: 30px;
 }
 
 .menu-container > h1 {
   grid-column: 1 / -1;
   grid-row: 1;
+}
+
+.starters-container,
+.desserts-container {
+  display: grid;
+  grid-template-rows: min-content repeat(4, 1fr);
+}
+
+.mains-container {
+  grid-column: 2;
+  grid-row: 2 / -1;
+  display: grid;
+  grid-template-rows: min-content repeat(7, 1fr);
+}
+
+.item-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.item-name {
+  align-self: center;
+}
+
+.item-price {
+  grid-column: 2;
+  grid-row: 1 / -1;
+  align-self: center;
+  justify-self: end;
+}
+
+.item-description {
+  font-size: 1rem;
+  color: rgb(177, 177, 177);
 }
