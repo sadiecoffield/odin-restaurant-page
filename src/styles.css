@@ -78,15 +78,17 @@ span {
 .opening-hours {
   grid-row: 3 / 4;
   grid-column: 2;
+  display: grid;
+  grid-template-rows: 2fr repeat(7, 1fr);
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: rgb(201, 134, 2);
 }
 
 .hour-row {
-  width: min(250px, 100%);
+  width: min(400px, 100%);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
