@@ -5,6 +5,7 @@ function renderHomePage() {
 
   // Add image to home page
   const img = document.createElement('img');
+  img.classList.add('home-img');
   img.src = restaurantImg;
   container.appendChild(img);
 
